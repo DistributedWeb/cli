@@ -1,0 +1,40 @@
+{
+  "name": "@dwebswarm/cli",
+  "version": "1.0.0",
+  "description": "CLI tool to interact with DWebswarm",
+  "bin": {
+    "dwebswarm": "./bin.js",
+    "dwebswarm-discovery": "./discovery.js",
+    "dwebswarm-swarm": "./swarm.js",
+    "dwebswarm-dht": "./dht.js"
+  },
+  "dependencies": {
+    "@dwebswarm/dht": "git://github.com/DistributedWeb/dht.git#aa9c40c1ae5a478e1f216d1c88377298f90d4168",
+    "@dwebswarm/discovery": "git://github.com/DistributedWeb/discovery.git#603b9fe0434f646ac434fdcf0d7062bef5d3a6b9",
+    "dht-size-up": "^1.0.0",
+    "dwebswarm": "git://github.com/DistributedWeb/dwebswarm.git#ec0ae42bc609b0c21027e0cdd4309d71f8f714be",
+    "minimist": "^1.2.5",
+    "pump": "^3.0.0",
+    "sodium-native": "^3.1.1"
+  },
+  "devDependencies": {
+    "standard": "^14.3.3"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwebswarm/cli.git"
+  },
+  "keywords": [
+    "dwebswarm",
+    "cli"
+  ],
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dwebswarm/cli/issues"
+  },
+  "homepage": "https://github.com/dwebswarm/cli#readme"
+}
